@@ -64,6 +64,7 @@ defmodule SimpleChatWeb.ChatLive do
     {:noreply, assign(socket, :users, updated_users)}
   end
 
+  # TODO: Implementar o handle_info para os eventos de mensagens e usuários
   @impl true
   def render(assigns) do
     ~L"""
