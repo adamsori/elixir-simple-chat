@@ -63,7 +63,7 @@ defmodule SimpleChatWeb.ChatLive do
     updated_users = Enum.filter(socket.assigns.users, &(&1.id != user_id))
     {:noreply, assign(socket, :users, updated_users)}
   end
-
+  # TODO: Implementar o handle_info para os eventos de mensagens e usuários
   @impl true
   def render(assigns) do
     ~L"""
